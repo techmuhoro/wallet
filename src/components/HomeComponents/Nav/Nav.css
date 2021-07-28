@@ -1,0 +1,106 @@
+.nav {
+  background: #11266d;
+  color: white;
+  height: 100px;
+  display: flex;
+}
+.nav .logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+.nav .logo .logo-wrapper {
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.nav .logo .logo-wrapper img {
+  height: 40px;
+  margin-right: 10px;
+}
+.nav .navigation {
+  width: 60%;
+  /* border: 1px solid turquoise; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .navigation ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav .navigation ul li {
+  /* border: 1px solid saddlebrown; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .navigation ul li span {
+  margin-right: 8px;
+}
+.nav .navigation ul li:not(:last-child) {
+  margin-right: 150px;
+}
+.nav .right {
+  /* background: tomato; */
+  width: 20%;
+  /* border: 1px sienna solid; */
+  /* padding-top: 20px; */
+  display: flex;
+  padding-right: 30px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav .right .header-humburger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.nav .right .header-button {
+  background: linear-gradient(
+    130.83deg,
+    #cc08ec 26.82%,
+    rgba(255, 255, 255, 0) 152.68%
+  );
+  width: fit-content;
+  border-radius: 6px;
+}
+.nav .right .header-button a {
+  display: inline-block;
+  width: 140px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav .navigation ul li:not(:last-child) {
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav .navigation ul li:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav .logo {
+    width: 80% !important;
+    /* border: 2px solid red; */
+  }
+
+  .nav .right .header-humburger {
+    display: block;
+  }
+  .nav .right .header-button {
+    display: none;
+  }
+  .nav .navigation {
+    display: none;
+  }
+}

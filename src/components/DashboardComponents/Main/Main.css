@@ -1,0 +1,10 @@
+.main .main-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.main .header {
+  margin-bottom: 0;
+}
+.main .dashboard-view {
+  height: calc(100% - 70px);
+}

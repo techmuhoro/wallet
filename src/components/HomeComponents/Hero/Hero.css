@@ -1,0 +1,197 @@
+.hero {
+  width: 100%;
+  height: 550px;
+  /* height: auto; */
+  background: radial-gradient(
+    54.27% 107.32% at 52.57% 53.22%,
+    #0931cd 13.69%,
+    #090e3e 100%
+  );
+
+  overflow: hidden;
+  position: relative;
+}
+
+.hero .shapes .circle-1 {
+  width: 500px;
+  height: 500px;
+  /* background: linear-gradient(
+    156.33deg,
+    #ffffff 11.66%,
+    #00fbec 32.08%,
+    rgba(196, 196, 196, 0) 112.57%
+  ); */
+  background: linear-gradient(
+    156.33deg,
+    #b5e8e5 11.66%,
+    #44b1ab 47.06%,
+    rgba(14, 186, 176, 0.42) 112.57%
+  );
+
+  border-radius: 50%;
+  position: absolute;
+  right: -130px;
+  bottom: -40px;
+  z-index: 9;
+}
+.hero .shapes .circle-2 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(
+    53.67% 53.67% at 50% 52.67%,
+    #cc08ec 0%,
+    #ededed 100%
+  );
+  border-radius: 50%;
+  position: absolute;
+  right: 00px;
+  top: 10px;
+  z-index: 99;
+}
+.hero .hero-content {
+  color: white;
+  padding-top: 150px;
+  padding-left: 60px;
+  /* height: 40px; */
+  /* border: 2px solid red; */
+  width: 60%;
+}
+.hero .hero-content .main-message {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+.hero .hero-content .main-message span {
+  /* background-color: white; */
+  color: #00fbec;
+}
+.hero .hero-content .secondary-message {
+  width: 50%;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #e9e1e1;
+}
+.hero .hero-content .hero-image {
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  z-index: 999;
+}
+.hero .hero-content .hero-image img {
+  width: 500px;
+}
+.hero .hero-content .hero-cta {
+  width: 200px;
+  height: 60px;
+  background-color: #13f0e1;
+  border-radius: 10px;
+}
+.hero .hero-content .hero-cta a {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+/* .hero .hero-content .hero-cta a span {
+  color: red;
+  display: inline-block;
+} */
+.hero .hero-content .hero-cta a .a-text {
+  margin-right: 10px;
+}
+.hero .hero-content .hero-cta span:last-child {
+  background-color: white;
+  color: black;
+  font-size: 0.9rem;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+@media screen and (max-width: 1280px) {
+  .hero .hero-content .secondary-message {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: 500px;
+  }
+  .hero .hero-content {
+    padding-left: 30px;
+    padding-top: 100px;
+    width: 80%;
+  }
+  .hero .hero-content .main-message {
+    font-size: 1.1rem;
+  }
+  .hero .hero-content .secondary-message {
+    font-size: 1rem;
+    width: 50%;
+  }
+  .hero .hero-content .hero-image img {
+    width: 330px;
+  }
+  .hero .hero-content .hero-image {
+    top: 100px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 580px;
+  }
+  .hero .hero-content {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 0;
+  }
+  .hero-content .main-message {
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+  }
+  .hero .hero-content .hero-image {
+    position: static;
+    margin: auto;
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+  .hero .hero-content .hero-image img {
+    position: relative;
+    z-index: 9999;
+  }
+  .hero .hero-content .secondary-message {
+    /* border: 1px solid red; */
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: auto;
+    position: relative;
+    z-index: 9999;
+    font-size: 1.2rem;
+    /* background-color: navy; */
+    text-align: center;
+    width: 80%;
+    color: rgb(255, 247, 247);
+    margin-bottom: 20px;
+  }
+  .hero .hero-content .hero-cta {
+    margin: auto;
+    position: relative;
+    z-index: 9999;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hero .shapes .circle-1 {
+    bottom: -150px;
+    right: -200px;
+  }
+  .hero .shapes .circle-2 {
+    top: 190px;
+    width: 100px;
+    height: 100px;
+  }
+}

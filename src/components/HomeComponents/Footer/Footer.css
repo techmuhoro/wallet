@@ -1,0 +1,115 @@
+.footer {
+  width: 100%;
+  background-color: rgb(236, 231, 231);
+}
+.footer .footer-wrapper {
+  /* border: 1px solid red; */
+  height: 94%;
+  display: flex;
+  padding: 40px 0;
+}
+.footer-wrapper .footer-logo {
+  width: 30%;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+}
+.footer-wrapper .footer-logo > div:first-child {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer-wrapper .footer-logo > div:first-child p {
+  font-weight: 700;
+  /* padding-top: 10px; */
+}
+.footer-wrapper .footer-logo img {
+  height: 40px;
+  margin-right: 20px;
+  margin-top: -10px;
+}
+.footer-wrapper .footer-logo .social {
+  /* border: 1px solid red; */
+  width: 40%;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper .footer-logo .social span {
+  cursor: pointer;
+  transition: 0.3s linear;
+  color: rgba(0, 0, 0, 0.452);
+}
+.footer-wrapper .footer-logo .social span:hover {
+  color: rgb(0, 233, 210);
+}
+.footer-wrapper .footer-body {
+  width: 70%;
+  display: flex;
+}
+.footer-wrapper .quicki-links {
+  /* border: 1px solid salmon; */
+  width: 50%;
+}
+.footer-wrapper .footer-body .product {
+  width: 50%;
+  padding-top: 5px;
+  /* border: 1px solid red; */
+}
+.footer-wrapper .footer-body ul {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.452);
+}
+.footer-wrapper .footer-body ul li {
+  margin-bottom: 5px;
+  /* display: inline-block; */
+  width: fit-content;
+  cursor: pointer;
+}
+.footer-wrapper .footer-body ul li:hover {
+  text-decoration: underline;
+}
+.footer-wrapper .footer-body p {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.footer .rights {
+  text-align: center;
+  /* font-family: monospace; */
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-wrapper .footer-logo {
+    width: 40%;
+  }
+  .footer-wrapper .footer-body {
+    width: 60%;
+  }
+  .footer-wrapper .footer-logo .social {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-wrapper .footer-logo {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-wrapper .footer-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-wrapper .footer-body .product {
+    margin-bottom: 30px;
+  }
+}

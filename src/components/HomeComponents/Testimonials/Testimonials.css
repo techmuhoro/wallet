@@ -1,0 +1,45 @@
+.testimonials {
+  /* border: 1px solid red; */
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: #3d00ea;
+  height: 352px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.testimonials .semis > div {
+  width: 100px;
+  height: 100px;
+  background-color: #a2a9ec93;
+  border-radius: 100px 0px 10px 0px;
+  position: absolute;
+}
+.testimonials .semis div:nth-child(1) {
+  transform: rotate(180deg);
+  top: 0;
+  left: 0;
+}
+.testimonials .semis div:nth-child(2) {
+  right: 0;
+  top: 0;
+  transform: rotate(270deg);
+}
+.testimonials .semis div:nth-child(3) {
+  left: 0;
+  bottom: 0;
+  transform: rotate(90deg);
+}
+.testimonials .semis div:nth-child(4) {
+  right: 0;
+  bottom: 0;
+  transform: rotate(360deg);
+}
+.testimonials .testimonials-wrapper {
+  width: 85%;
+  height: 85%;
+  /* border: 1px solid red; */
+}
